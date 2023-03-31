@@ -2,19 +2,37 @@
 <html>
   <head>
     <title>Benas' Page</title>
-    <style>
-      /* Center text horizontally and vertically */
-      body {
-          background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-    </style>
+    <script src="weather.js"></script> <!-- Add this line to link your JavaScript file -->
+    <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: #000;
+      background-image: url('https://i.imgur.com/LRoLTlK.jpeg');
+      background-repeat: repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      color: #fff; /* Add this line to set the text color to white */
+    }
+    
+    h1 {
+      text-align: left;
+    }
+    
+    p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
   </head>
   <body>
-    <h1>Hey there. This my web page. I'm Benas!</h1>
+    <h1>Hey there. This my web page. I'm Benas!</h1><br>
+    <div id="weather-data"></div>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <input type="submit" value="Submit">
+    </form>
   </body>
 </html>
